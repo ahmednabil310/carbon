@@ -78,3 +78,65 @@ body {
 }
 
 /* End tokenomics */
+
+.buy {
+  background-image: url(./assets/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 111px;
+  padding-bottom: 129px;
+}
+
+.buy__header {
+  max-width: 512px;
+  margin-bottom: 40px;
+}
+
+.buy__header h2 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.buy__header hr {
+  background-color: var(--main-color);
+  width: 60px;
+  height: 3px;
+  border-radius: 10px;
+  margin-left: 0px;
+}
+
+.buy__header p {
+  color: white;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.buy__content__step {
+  margin-bottom: 30px;
+}
+
+.buy__content__step__number {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.buy__content__step__instruction {
+  color: white;
+  width: 514px;
+  margin-top: 10px;
+  margin-left: 8px;
+}
+
+.buy__content__step__instruction h3 {
+  font-size: 18px;
+  font-weight: 500;
+  max-width: 275px;
+  /* height: 44px; */
+}
+
+.buy__content__step__instruction p {
+  font-size: 16px;
+  font-weight: 300;
+  max-width: 514px;
+  letter-spacing: 21;
+}
