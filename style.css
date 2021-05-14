@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap");
+
+:root {
+  --bg-color: #292c30;
+  --main-color: #049671;
+  --secondary-color: #018867;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--bg-color);
+  color: var(--main-color);
+}
+
+.tokenomics {
+  padding-top: 105px;
+  padding-bottom: 169px;
+}
+
+.tokenomics__content__header {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+
+.tokenomics__table {
+  border: 1px solid var(--main-color);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.tokenomics__table__header {
+  background-color: var(--main-color);
+  color: white;
+}
+
+.tokenomics__table__header tr th {
+  padding: 31px 25px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.tokenomics__table__header tr th:first-child {
+  padding-left: 54px;
+}
+.tokenomics__table__header tr th:last-child {
+  padding-right: 54px;
+}
+
+.tokenomics__table__body tr {
+  text-align: center;
+}
+
+.tokenomics__table__body tr td {
+  padding: 60px 0;
+  font-size: 16px;
+  font-weight: 300;
+}
