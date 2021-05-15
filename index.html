@@ -13,46 +13,47 @@
     <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
-  <body>
-    <section class="first-section">
-      <!-- NavBar -->
-      <nav class="navbar navbar-expand-lg">
-        <a class="navbar-brand p-0 m-0" href="#">
-          <img src="./assets/1.png" alt="logo" />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+  <body data-spy="scroll" data-target=".navbar" data-offset="100">
+    <!-- NavBar -->
+    <nav class="navbar navbar-default navbar-expand-lg p-0 fixed-top">
+      <a class="navbar-brand p-0 m-0" href="#">
+        <img src="./assets/1.png" alt="logo" />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mx-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Tokenomics</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">How To Buy</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Our Team</a>
-            </li>
-          </ul>
-          <button class="btn main-button" type="submit">Donate</button>
-        </div>
-      </nav>
-      <!-- NavBar -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#tokenomics">Tokenomics</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#buy">How To Buy</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#info">Token Info </a>
+          </li>
+        </ul>
+        <button class="btn main-button" type="submit">Donate</button>
+      </div>
+    </nav>
+    <!-- NavBar -->
+
+    <section class="first-section">
       <!-- Hero Section -->
-      <div class="hero-section">
+      <div id="home" class="hero-section">
         <div
           class="
             hero-section__inner
@@ -167,6 +168,7 @@
 
     <!-- Start of how to buy -->
     <div
+      id="buy"
       class="
         section-container
         buy
@@ -189,8 +191,8 @@
           where we will be happy to help!
         </p>
       </div>
-      <div class="buy__content">
-        <div class="buy__content__step d-flex">
+      <div class="buy__content container-fluid row">
+        <div class="buy__content__step d-flex col-12 justify-content-center">
           <div>
             <p class="buy__content__step__number mb-0">1.</p>
           </div>
@@ -202,7 +204,7 @@
             </p>
           </div>
         </div>
-        <div class="buy__content__step d-flex">
+        <div class="buy__content__step d-flex col-12 justify-content-center">
           <div>
             <p class="buy__content__step__number mb-0">2.</p>
           </div>
@@ -214,7 +216,7 @@
             </p>
           </div>
         </div>
-        <div class="buy__content__step d-flex">
+        <div class="buy__content__step d-flex col-12 justify-content-center">
           <div>
             <p class="buy__content__step__number mb-0">3.</p>
           </div>
@@ -226,7 +228,7 @@
             </p>
           </div>
         </div>
-        <div class="buy__content__step d-flex">
+        <div class="buy__content__step d-flex col-12 justify-content-center">
           <div>
             <p class="buy__content__step__number mb-0">4.</p>
           </div>
@@ -239,7 +241,7 @@
             </p>
           </div>
         </div>
-        <div class="buy__content__step d-flex">
+        <div class="buy__content__step d-flex col-12 justify-content-center">
           <div>
             <p class="buy__content__step__number mb-0">5.</p>
           </div>
@@ -295,15 +297,81 @@
     <!-- End of info section -->
     <!-- Timeline Section -->
     <div class="timline-container">
-      <div class="d-flex">
-        <h3>Timeline</h3>
+      <div class="d-flex flex-column">
+        <div class="timline-container__header">
+          <h3>Timeline</h3>
+          <hr class="mid-section" />
+        </div>
+        <div
+          class="
+            timeline__content
+            d-flex
+            flex-column
+            align-items-center align-items-lg-start
+          "
+        >
+          <div class="timline__phase">
+            <h4 class="timline__phase__header">PHASE 1</h4>
+            <div class="timline__phase__paragraph">
+              <p>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+                takimata sanctus est Lorem
+              </p>
+            </div>
+          </div>
+          <div class="timline__phase align-self-lg-end">
+            <h4 class="timline__phase__header">PHASE 2</h4>
+            <div class="timline__phase__paragraph">
+              <p>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+                takimata sanctus est Lorem
+              </p>
+            </div>
+          </div>
+          <div class="timline__phase">
+            <h4 class="timline__phase__header">PHASE 3</h4>
+            <div class="timline__phase__paragraph">
+              <p>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+                takimata sanctus est Lorem
+              </p>
+            </div>
+          </div>
+          <div class="timline__phase align-self-lg-end">
+            <h4 class="timline__phase__header">PHASE 4</h4>
+            <div class="timline__phase__paragraph">
+              <p>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+                takimata sanctus est Lorem
+              </p>
+            </div>
+            <div class="timline__phase__paragraph">
+              <p>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <!-- Timeline Section -->
     <!-- Donations list -->
-    <div class="timline-container">
-      <div class="d-flex">
+    <div class="donations-container">
+      <div class="">
         <h3>Donations Done so far</h3>
+        <hr class="mid-section" />
       </div>
     </div>
     <div
@@ -314,6 +382,7 @@
       <div class="carousel-inner">
         <div class="carousel-item active">
           <h1 class="carousel-title">Annie Lenonheart</h1>
+          <hr class="mid-section" />
           <p class="carousel-talk">
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
             nonumy eirmod tempor invidunt ut l
@@ -333,6 +402,7 @@
         </div>
         <div class="carousel-item">
           <h1 class="carousel-title">Annie Lenonheart</h1>
+          <hr class="mid-section" />
           <p class="carousel-talk">
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
             nonumy eirmod tempor invidunt ut l
@@ -352,6 +422,7 @@
         </div>
         <div class="carousel-item">
           <h1 class="carousel-title">Annie Lenonheart</h1>
+          <hr class="mid-section" />
           <p class="carousel-talk">
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
             nonumy eirmod tempor invidunt ut l
@@ -415,5 +486,6 @@
       integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
       crossorigin="anonymous"
     ></script>
+    <script src="./main.js"></script>
   </body>
 </html>

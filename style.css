@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap");
 
 :root {
   --bg-color: #292c30;
@@ -8,18 +8,20 @@
 
 body {
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   background-color: var(--bg-color);
   color: var(--main-color);
+  position: relative;
 }
 .first-section {
   background-image: url(./assets/first-section.png);
   background-repeat: no-repeat;
   background-size: cover;
+  padding-top: 224px;
 }
 /* NavBar */
 .navbar {
-  padding: 21px 138px 224px !important;
+  padding: 5px 138px !important;
 }
 .navbar .navbar-nav li a {
   color: white;
@@ -39,9 +41,19 @@ body {
   color: white;
   background-color: #014b38;
 }
+
+.nav-item .active {
+  color: var(--main-color) !important;
+}
+
+.navbar.scrolled {
+  background-color: var(--bg-color) !important;
+  transition: background-color 200ms linear;
+}
+
 @media (max-width: 992px) {
   .navbar {
-    padding: 21px 30px 224px !important;
+    padding: 5px 30px !important;
   }
 }
 /* Navbar */
@@ -226,7 +238,6 @@ body {
   font-size: 16px;
   font-weight: 300;
   max-width: 514px;
-  letter-spacing: 21;
 }
 /* buy section */
 /* Start of info section */
@@ -295,17 +306,70 @@ body {
 }
 /* End of info section */
 /* Time Line */
+
+.timline-container {
+  padding: 0 10.7%;
+  margin-bottom: 128px;
+}
+
+.timline-container__header {
+  margin-bottom: 80px;
+}
+
 .timline-container h3 {
   font-size: 32px;
   font-weight: bold;
   text-align: center;
-  border-bottom: 2px solid #04775a;
-  margin: 0 auto 139px;
+}
+
+.timline__phase__header {
+  margin-bottom: 30px;
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.timline__phase__paragraph {
+  width: 324px;
+  background-color: #191b1e;
+  border: 2px solid var(--main-color);
+  border-radius: 10px;
+  padding: 26px;
+  margin-bottom: 15px;
+}
+
+.timline__phase__paragraph p {
+  margin: 0;
+}
+
+@media (min-width: 992px) {
+  .timeline__content {
+    background-image: linear-gradient(var(--main-color), var(--main-color));
+    background-size: 5px 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+
+@media (min-width: 1300px) {
+  .timline-container {
+    padding: 0 20%;
+  }
 }
 
 /* End of Time line */
 
 /* Donations list */
+
+.donations-container {
+  margin-bottom: 80px;
+}
+
+.donations-container h3 {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+}
+
 .carousel {
   background-color: #191b1e;
   width: 48%;
@@ -416,3 +480,10 @@ footer {
   }
 }
 /* Footer */
+
+hr.mid-section {
+  background-color: var(--main-color);
+  width: 140px;
+  height: 3px;
+  border-radius: 10px;
+}
