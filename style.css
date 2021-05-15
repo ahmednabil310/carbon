@@ -28,16 +28,21 @@ body {
 .navbar .navbar-nav li a:hover {
   color: #049671;
 }
-.navbar button {
+.navbar .main-button {
   border: 1px solid #049671;
   border-radius: 20px;
   color: #049671;
   padding: 3px 24px !important;
   font-weight: bold;
 }
-.navbar button:hover {
+.navbar .main-button:hover {
   color: white;
   background-color: #014b38;
+}
+@media (max-width: 992px) {
+  .navbar {
+    padding: 21px 30px 224px !important;
+  }
 }
 /* Navbar */
 /* Hero Section */
@@ -55,17 +60,16 @@ body {
 .hero-section__inner .hero-section__inner__talk {
   font-size: 18px;
   font-weight: 300;
-  max-width: 26%;
 }
 .hero-section__inner .tweet-image {
   padding-top: 5px;
 }
-.hero-section__inner .icons {
+.icons {
   list-style: none;
   margin-top: 15px;
   margin-bottom: 25px;
 }
-.hero-section__inner .icons li {
+.icons li {
   margin-right: 30px;
 }
 .hero-section__buttons__button {
@@ -103,77 +107,68 @@ body {
   );
   transform: scale(1.03);
 }
-
+@media (max-width: 576px) {
+  .hero-section__inner .hero-section__inner__title {
+    font-size: 25px;
+  }
+}
 /* Hero Section */
 
 /* Start tokenomics */
-.tokenomics {
-  padding-top: 105px;
-  padding-bottom: 169px;
-}
-
-.tokenomics__content__header {
-  font-size: 32px;
-  font-weight: 700;
-  margin-bottom: 50px;
-}
-
-.tokenomics__table {
-  text-transform: uppercase;
-  text-align: center;
-  border-collapse: separate;
-  border-spacing: 0;
-}
-
-.tokenomics__table__header {
-  background-color: var(--main-color);
+.tokenomics-container {
+  padding-top: 64px;
+  padding-bottom: 128px;
+  background-color: #1a1f27;
   color: white;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  padding-left: 138px;
+  padding-right: 138px;
 }
-
-.tokenomics__table__header tr th {
-  padding: 31px 25px;
-  font-size: 16px;
-  font-weight: 500;
+.tokenmocis-data-inner {
+  margin-bottom: 28px;
 }
-
-.tokenomics__table__header tr th:first-child {
-  border-radius: 10px 0 0 0;
-  -moz-border-radius: 10px 0 0 0;
-  -webkit-border-radius: 10px 0 0 0;
-  padding-left: 54px;
+.tokenmocis-title {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  margin-bottom: 100px;
+  color: #049671;
 }
-.tokenomics__table__header tr th:last-child {
-  padding-right: 54px;
-  border-radius: 0 10px 0 0;
-  -moz-border-radius: 0 10px 0 0;
-  -webkit-border-radius: 0 10px 0 0;
+.tokenmocis-data-inner {
+  border: 1px solid #049671;
+  padding: 20px 0px 20px 75px;
 }
-
-.tokenomics__table__body tr {
-  text-align: center;
+.tokenmocis-data-inner-title {
+  margin-bottom: 11px;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400;
 }
-
-.tokenomics__table__body tr td {
-  padding: 60px 0;
-  font-size: 16px;
+.tokenmocis-data-inner span {
+  line-height: 24px;
   font-weight: 300;
-  border-bottom: 1px solid var(--main-color);
+  font-size: 14px;
 }
-.tokenomics__table__body tr td:first-child {
-  border-left: 1px solid var(--main-color);
-  border-bottom-left-radius: 10px;
+@media (max-width: 768px) {
+  .tokenomics-container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .tokenmocis-data-inner {
+    padding: 20px 5px 20px 15px;
+  }
 }
-.tokenomics__table__body tr td:last-child {
-  border-right: 1px solid var(--main-color);
-  border-bottom-right-radius: 10px;
+@media (max-width: 576px) {
+  .tokenmocis-data-inner-title {
+    font-size: 16px;
+  }
+  .tokenmocis-data-inner span {
+    font-size: 12px;
+  }
 }
-
 /* End tokenomics */
-
+/* buy section */
 .buy {
-  background-image: url(./assets/background.png);
+  background-image: url(./assets/buy-image.png);
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 111px;
@@ -216,7 +211,7 @@ body {
 .buy__content__step__instruction {
   color: white;
   width: 514px;
-  margin-top: 10px;
+  margin-top: 17px;
   margin-left: 8px;
 }
 
@@ -233,3 +228,191 @@ body {
   max-width: 514px;
   letter-spacing: 21;
 }
+/* buy section */
+/* Start of info section */
+.info-container {
+  background-color: #292c30;
+  color: white;
+  padding: 53px 0px 120px 0px;
+}
+
+.info-title {
+  font-size: 35px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.info-pargraph {
+  font-weight: 300;
+  line-height: 24px;
+  margin-bottom: 23px;
+}
+.info-link {
+  color: #049671;
+  text-decoration: underline;
+  font-weight: bold;
+}
+.info-section__button {
+  background: none;
+  border: 1px solid #017a5c;
+  color: white;
+  padding: 15px 38px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  -webkit-transition: all 325ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: all 325ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  background-color: #017a5c;
+  margin-bottom: 15px;
+}
+.info-section__button:hover {
+  text-decoration: none;
+  color: white;
+  background: rgb(16, 13, 57);
+  background: -moz-linear-gradient(
+    35deg,
+    rgba(16, 13, 57, 1) 0%,
+    rgba(38, 170, 170, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    35deg,
+    rgba(16, 13, 57, 1) 0%,
+    rgba(38, 170, 170, 1) 100%
+  );
+  background: linear-gradient(
+    35deg,
+    rgba(16, 13, 57, 1) 0%,
+    rgba(38, 170, 170, 1) 100%
+  );
+  transform: scale(1.03);
+}
+@media (max-width: 992px) {
+}
+@media (max-width: 576px) {
+  .info-link {
+    font-size: 16px;
+  }
+}
+/* End of info section */
+/* Time Line */
+.timline-container h3 {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  border-bottom: 2px solid #04775a;
+  margin: 0 auto 139px;
+}
+
+/* End of Time line */
+
+/* Donations list */
+.carousel {
+  background-color: #191b1e;
+  width: 48%;
+  margin: 0px auto;
+  border-radius: 10px;
+  margin-bottom: 120px;
+}
+.carousel-inner {
+  border: 2px solid #049671;
+  padding: 77px 55px;
+  border-radius: 10px;
+}
+.carousel-title {
+  font-size: 32px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.carousel-talk {
+  color: #049671;
+  margin-bottom: 30px;
+  margin-top: 45px;
+}
+.bottom-left {
+  padding-right: 25px;
+}
+.bottom-left-title {
+  color: #049671;
+  font-size: 24px;
+  font-weight: 300;
+  margin-bottom: 12px;
+}
+.bottom-left-span {
+  font-size: 32px;
+}
+.bottom-right {
+  border-left: 2px solid #04775a;
+  padding-left: 14px;
+}
+.bottom-right-title {
+  color: #049671;
+  font-size: 24px;
+  font-weight: 300;
+  margin-bottom: 12px;
+}
+.bottom-right-span {
+  font-size: 16px;
+}
+@media (max-width: 992px) {
+  .carousel {
+    width: 80%;
+  }
+  .carousel-inner {
+    padding: 55px 40px;
+  }
+}
+@media (max-width: 768px) {
+  .carousel-title {
+    font-size: 25px;
+  }
+  .carousel-talk {
+    font-size: 15px;
+  }
+  .bottom-left {
+    padding-right: 10px;
+  }
+  .bottom-left-title {
+    font-size: 20px;
+  }
+  .bottom-right-span {
+    font-size: 14px;
+  }
+  .bottom-left-span {
+    font-size: 27px;
+  }
+}
+@media (max-width: 576px) {
+  .carousel {
+    width: 95%;
+  }
+  .carousel-inner {
+    padding: 25px 15px;
+  }
+  .timline-container h3 {
+    font-size: 22px;
+  }
+  .carousel-title {
+    font-size: 21px;
+  }
+}
+/* Donations list */
+/* Footer */
+footer {
+  background-color: #1a1c1e;
+  padding: 48.5px 0px;
+}
+.footer-talk {
+  padding: 11.4px 0px;
+  color: white;
+  font-weight: 300;
+  max-width: 40%;
+}
+@media (max-width: 576px) {
+  .footer-talk {
+    max-width: 100%;
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+}
+/* Footer */
