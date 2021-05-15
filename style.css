@@ -312,11 +312,11 @@ body {
   margin-bottom: 128px;
 }
 
-.timline-container__header {
+.section-container__header {
   margin-bottom: 80px;
 }
 
-.timline-container h3 {
+.section-container__header h3 {
   font-size: 32px;
   font-weight: bold;
   text-align: center;
@@ -359,16 +359,6 @@ body {
 /* End of Time line */
 
 /* Donations list */
-
-.donations-container {
-  margin-bottom: 80px;
-}
-
-.donations-container h3 {
-  font-size: 32px;
-  font-weight: bold;
-  text-align: center;
-}
 
 .carousel {
   background-color: #191b1e;
@@ -453,7 +443,7 @@ body {
   .carousel-inner {
     padding: 25px 15px;
   }
-  .timline-container h3 {
+  .section-container__header h3 {
     font-size: 22px;
   }
   .carousel-title {
